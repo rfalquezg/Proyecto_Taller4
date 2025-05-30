@@ -36,6 +36,11 @@
             </div>
 
             <div class="mb-4">
+                <label for="fecha_cierre" class="block font-semibold">Fecha de Cierre:</label>
+                <input type="date" id="fecha_cierre" name="fecha_cierre" value="{{ $solicitud->fecha_cierre }}" class="w-full border border-gray-300 rounded px-3 py-2">
+            </div>
+
+            <div class="mb-4">
                 <label for="estado" class="block font-semibold">Estado:</label>
                 <select id="estado" name="estado" class="w-full border border-gray-300 rounded px-3 py-2" required>
                     <option value="Solicitud" {{ $solicitud->estado == 'Solicitud' ? 'selected' : '' }}>Solicitud</option>

@@ -24,14 +24,27 @@
                 <textarea id="descripcion" name="descripcion" class="w-full border border-gray-300 rounded px-3 py-2" required></textarea>
             </div>
 
+            <!-- Área como combo box -->
             <div class="mb-4">
                 <label for="area" class="block font-semibold">Área:</label>
-                <input type="text" id="area" name="area" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                <select id="area" name="area" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                    <option value="">Seleccione un área</option>
+                    <option value="Contabilidad">Contabilidad</option>
+                    <option value="Recursos Humanos">Recursos Humanos</option>
+                    <option value="Sistemas">Sistemas</option>
+                    <option value="Administración">Administración</option>
+                </select>
             </div>
 
             <div class="mb-4">
                 <label for="fecha_registro" class="block font-semibold">Fecha de Registro:</label>
                 <input type="date" id="fecha_registro" name="fecha_registro" class="w-full border border-gray-300 rounded px-3 py-2" required>
+            </div>
+
+            <!-- Nuevo campo: Fecha de Cierre -->
+            <div class="mb-4">
+                <label for="fecha_cierre" class="block font-semibold">Fecha de Cierre:</label>
+                <input type="date" id="fecha_cierre" name="fecha_cierre" class="w-full border border-gray-300 rounded px-3 py-2">
             </div>
 
             <div class="mb-4">
